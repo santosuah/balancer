@@ -1,0 +1,19 @@
+;;!domain: balancer
+;;!problem: problem1
+
+0.00000: (send-non-empty-queue-tail w1 t1 t2 q1 h1) [66.20900]
+66.21000: (execute t1 h1) [226.00000]
+66.21000: (send-non-empty-queue-tail w1 t2 t3 q1 h2) [36.29100]
+102.50200: (execute t2 h2) [94.00000]
+196.50300: (send-non-empty-queue-tail w1 t3 t4 q1 h2) [95.96300]
+292.46700: (execute t3 h2) [473.00000]
+765.46800: (send-non-empty-queue-tail w1 t4 t5 q1 h2) [47.48300]
+812.95200: (execute t4 h2) [217.00000]
+812.95300: (send-non-empty-queue-tail w1 t5 t6 q1 h1) [21.21400]
+834.16800: (execute t5 h1) [105.00000]
+939.16900: (send-empty-queue-tail w1 t6 q1 h1) [95.10800]
+1034.27800: (execute t6 h1) [455.00000]
+
+; Makespan: 1489.278
+; Cost: 0
+; States evaluated: 41
